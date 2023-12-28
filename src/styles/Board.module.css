@@ -1,0 +1,10 @@
+.board{
+    position: relative;
+    height: 100%;
+    aspect-ratio: 1/1;
+    border: 2px solid black;
+    box-sizing:border-box;
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    grid-template-rows: repeat(13, 1fr);
+}

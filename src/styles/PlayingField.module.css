@@ -1,0 +1,14 @@
+.field{
+    position: relative;
+    background: lightsalmon;
+    width: calc(100% - 0.125rem);
+    height: calc(100% - 0.125rem);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.color{
+    position: absolute;
+}

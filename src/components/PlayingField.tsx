@@ -10,7 +10,7 @@ export default function PlayingField({field}:Props){
         <div 
             className={s.field} 
             style={{
-                aspectRatio: `${field.isSpacer ? "9/1" : field.width === field.height ? "1/1" : field.orientation === "top" ? "1/2" : field.orientation === "bottom" ? "1/2" : "2/1"}`,
+                aspectRatio: `${field.isSpacer ? "9/9" : field.width === field.height ? "1/1" : field.orientation === "top" ? "1/2" : field.orientation === "bottom" ? "1/2" : "2/1"}`,
             }}
         >
             {field.isProperty ? 

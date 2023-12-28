@@ -21,13 +21,14 @@ export default function Board(){
                             key={`field_${field.id}`}
                             style={{
                                 width: "100%",
-                                aspectRatio: `${field.isSpacer ? "9/1" : field.width === field.height ? "1/1" : field.orientation === "top" ? "1/2" : field.orientation === "bottom" ? "1/2" : "2/1"}`,
+                                aspectRatio: `${field.isSpacer ? "9/9" : field.width === field.height ? "1/1" : field.orientation === "top" ? "1/2" : field.orientation === "bottom" ? "1/2" : "2/1"}`,
                                 background: "black",
                                 display: "flex",
                                 justifyContent: "center",
                                 alignItems: "center",
                                 flexWrap: "wrap",
-                                gridColumn: `auto / span ${field.height === field.width ? 2 : field.isSpacer ? 9 : field.orientation === "left" ? 2 : field.orientation === "right" ? 2 : 1}`
+                                gridColumn: `auto / span ${field.height === field.width ? 2 : field.isSpacer ? 9 : field.orientation === "left" ? 2 : field.orientation === "right" ? 2 : 1}`,
+                                gridRow: `auto / span ${field.isSpacer ? 9 : 1}`
                             }}
                         >
                             <PlayingField field={field}/>

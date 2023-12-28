@@ -1,11 +1,13 @@
 import { Field } from "../interfaces"
+import PlayerOne from "./PlayerOne"
 import s from "../styles/PlayingField.module.css"
 
 interface Props{
     field: Field
+    playerField: number
 }
 
-export default function PlayingField({field}:Props){
+export default function PlayingField({field, playerField}:Props){
     return(
         <div 
             className={s.field} 
@@ -25,7 +27,9 @@ export default function PlayingField({field}:Props){
                 >
                 </div> 
             : null}
-            <div>{field.boardNumber}</div>
+            <div>
+                {field.boardNumber === playerField ? <PlayerOne /> : null}
+            </div>
         </div>
     )
 }

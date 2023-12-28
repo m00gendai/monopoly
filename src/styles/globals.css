@@ -27,6 +27,6 @@ main{
     height: 95vh;
     background: lightseagreen;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }

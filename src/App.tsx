@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import Board from "./components/board"
-
+import Accessories from "./components/Accessories"
 
 function App() {
   const [count, setCount] = useState(0)
@@ -8,6 +8,7 @@ function App() {
   return (
    <main>
     <Board />
+    <Accessories />
    </main>
   )
 }
